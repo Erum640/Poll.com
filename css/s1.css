@@ -1,0 +1,129 @@
+/*Home Page--CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: wheat; */
+}
+
+body {
+  margin: 0;
+  background-color: wheat;
+}
+#top {
+  background-color: wheat;
+  height: 100vh;
+  width: 100vw;
+}
+.chart-container {
+  padding-top: 30px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+
+  height: 70vh;
+  background-color: wheat;
+}
+#h_btn {
+  margin-bottom: 5em;
+}
+/*Navigation*/
+
+/*Poll Side*/
+ul {
+  list-style-type: none;
+}
+.poll {
+  align-items: center;
+}
+#poll {
+  /* width: 5%; */
+  padding-left: 2em;
+  padding-right: 2em;
+  border-radius: 1em;
+  border-color: transparent;
+  background-color: goldenrod;
+  height: 2em;
+}
+.poll-name {
+  text-align: center;
+  padding-top: 20px;
+}
+.poll-body {
+  /* width: 100vw; */
+  display: flex;
+  justify-content: center;
+
+  font-size: 2em;
+}
+.poll-heading {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2em;
+}
+.poll-footer {
+  display: flex;
+  justify-content: center;
+}
+.rw1 {
+  padding-top: 150px;
+  padding-bottom: 180px;
+  text-align: center;
+}
+
+.cn {
+  padding-bottom: 15px;
+}
+.btn {
+  position: relative;
+  background-color: #4caf50;
+  border: none;
+  font-size: 28px;
+  color: #ffffff;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+#bt {
+  border-color: transparent;
+  border-radius: 0.5em;
+  margin-left: 1em;
+  width: 5em;
+}
+.btn:after {
+  content: "";
+  background: blue;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.btn:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+#footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: lightyellow;
+  text-align: center;
+}
+
+.link-icon {
+  color: black;
+  font-size: 25px;
+  padding-right: 10px;
+}

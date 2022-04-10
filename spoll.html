@@ -1,0 +1,112 @@
+<!--Vote.com created by Andrew George-->
+<!--version 1.0-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>POLLING SITE | LOCAL MACHINE</title>
+    <link rel="shortcut icon" type="image/png" href="images/vote-icon.png">
+    <link rel="stylesheet" href="css/s1.css">
+    <!--B  ootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+      integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--Logos/Vectors-->
+    <script src="https://kit.fontawesome.com/ccbdc28270.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <section id="top">
+      <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+          <button class="btn-success" style="border-radius: 1em;border-color: transparent;"><a class="navbar-brand"
+              href="#" style="display: flex;justify-content: center;padding-left: .8em;">Poll.com</a></button>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" href="results.html">Poll Results <span
+                  class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link active" href="createPoll.html">Poll Settings</a>
+              <a class="nav-item nav-link active" href="about.html">Thanks Page</a>
+
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div style="height: 90vh;">
+        <div class="row" style="display: flex;justify-content: center;align-content: center;width: 100vw;">
+          <button hidden id="h_btn" class="btn" style="width: 10em;margin-top: 10em;">Create New Poll</button>
+          <div class="col-sm-12 col-lg-4" id="contain">
+
+            <form id="pollForm" style="height: 60vh;margin-top: 10vh;">
+              <div class="poll" style="height: 100%;display: flex;justify-content: center;">
+                <div style="width: 100vw;">
+                  <div class="poll-heading">
+                    <button class="poll-title" id="poll"></button>
+
+                  </div>
+                  <div class="poll-body">
+                    <ul>
+                      <li>
+                        <label><input type="radio" name="pollOptions" id="first"><span id="1"
+                            style="margin-left:1em"></span></label>
+                      </li>
+                      <li>
+                        <label><input type="radio" name="pollOptions" id="second"><span id="2"
+                            style="margin-left:1em"></span></label>
+                      </li>
+                      <li>
+                        <label><input type="radio" name="pollOptions" id="third"><span id="3"
+                            style="margin-left:1em"></span></label>
+                      </li>
+                      <li>
+                        <label><input type="radio" name="pollOptions" id="fourth"><span id="4"
+                            style="margin-left:1em"></span></label>
+                      </li>
+
+                    </ul>
+                  </div>
+                  <div class="poll-footer">
+                    <button type="submit" class="btn-success" id="bt">Vote</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+
+          </div>
+          <div class="chart-container col-sm-12 col-lg-6">
+            <canvas id="chart" height="150"></canvas>
+          </div>
+        </div>
+        <div style="display: flex;justify-content: center;align-items: center;background-color: wheat ;height: 10vh;">
+          <button class="btn-primary" style="border-radius: .6em;">
+            <a href="indexpage.html" style="font-size: large;color: white;font-weight: 300;border-color: transparent;">
+              Go To Landing
+              Page</a>
+          </button>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js'></script>
+    <script type="text/javascript" src="spoll.js"></script>
+  </body>
+
+</html>

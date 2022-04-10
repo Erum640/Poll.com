@@ -1,0 +1,45 @@
+#pll{
+    padding:8px 20px;
+    margin-top:10px;
+    margin-left:10px ;
+    margin-right:10px;
+    border:2px solid black;
+    border-radius:40px;
+    background-color:green ;
+    color:white;
+    font-size:12pt;
+}
+#pll:hover{
+    background-color:blue;
+    color:white;
+}
+#cp{
+    padding:8px 20px;
+    margin-top:10px;
+    margin-left:10px ;
+    margin-right:10px;
+    border:2px solid black;
+    border-radius:40px;
+    background-color:green ;
+    color:white;
+    font-size:12pt;
+}
+#cp:hover{
+    background-color:blue;
+    color:white;
+}
+#fd{
+    padding:8px 20px;
+    margin-top:10px;
+    margin-left:10px ;
+    margin-right:10px;
+    border:2px solid black;
+    border-radius:40px;
+    background-color:green ;
+    color:white;
+    font-size:12pt;
+}
+#fd:hover{
+    background-color:blue;
+    color:white;
+}
