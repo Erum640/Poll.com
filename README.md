@@ -27,8 +27,7 @@ based on their opinions ,preferences and input.
 
 ### How to Use 
 User can get access to the website by the Link of website  given beside ( on the right side ).
-or user  can go to index.html which is the first page of website 
-after which  the user will be redirected towards the  subsequent pages .
+
 
 
 
